@@ -1,0 +1,53 @@
+body {
+    background-color: bisque;
+}
+
+
+.header1 {
+    background-color: brown;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+
+.header1 span {
+    margin-right: 40px;
+}
+
+.conversao {
+    background-color: brown;
+    color: white;
+    height: 80vh;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 4%;
+    border-radius: 10%;
+}
+
+.mensagem {
+    background-color: brown;
+    width: 600px;
+    height: 50vh;
+    text-align: justify;
+    color: white;
+    font-size: 15px;
+    margin-top: -37.6%;
+    margin-left: 2%;
+}
+
+.mensagem .titulo {
+    text-align: justify;
+}
+
+.select-container {
+    display: grid;
+    gap: 20px;
+}
+
+.select-container #select,
+#valor {
+    padding: 10px;
+    cursor: pointer;
+}

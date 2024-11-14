@@ -5,33 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CashSul</title>
-    <link rel="stylesheet" href=estilo.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
 </head>
 
 <body>
 
     <div class="header1">
         <strong>
-            Cotacoes
-            Ajuda
-            Entrar
-            Criar conta
+            <span style="cursor: pointer;">Cotacoes</span>
+            <span style="cursor: pointer;">Ajuda</span>
+            <span style="cursor:pointer;">Entrar</span>
+            <span style="cursor: pointer;">Criar conta</span>
         </strong>
     </div>
     <br></br>
 
     <section class="conversao">
-        <select name="converter" id="converter" size="5">
-            <option>Converter</option>
-        </select>
-        <br></br>
-        <select name="para" id="para" size="5">
-            <option>Para</option>
-        </select>
+        <div class="select-container">
+            <br><input type="number" name="valor" id="valor" placeholder="Insira o valor para conversão"></br>
+            <strong>Converter</strong>
+            <select name="converter" id="select">
+                <option>Real (BRL)</option>
+                <option>Peso Argentino (ARS)</option>
+                <option>Boliviano (BOB)</option>
+                <option>Peso Chileno(CLP)</option>
+                <option>Peso Colombiano (COP)</option>
+                <option>Sol (PEN)</option>
+                <option>Peso Uruguaio (UYU)</option>
+                <option>Bolivar Venezuelano (VES)</option>
+                <option>Dólar Americano (USD)</option>
+                <option>Guaraní (PYG)</option>
+            </select>
+            <strong>Para</strong>
+            <select name="para" id="select">
+                <option>Peso Argentino (ARS)</option>
+                <option>Real (BRL)</option>
+                <option>Boliviano (BOB)</option>
+                <option>Peso Chileno(CLP)</option>
+                <option>Peso Colombiano (COP)</option>
+                <option>Sol (PEN)</option>
+                <option>Peso Uruguaio (UYU)</option>
+                <option>Bolivar Venezuelano (VES)</option>
+                <option>Dólar Americano (USD)</option>
+                <option>Guaraní (PYG)</option>
+            </select>
+        </div>
     </section>
 
     <div class="mensagem">
-        <h1>Suas viagens facilitadas</h1>
+        <h1 class="titulo">Suas viagens facilitadas</h1>
         <p>
             A CashSul completa em 2024, 10 anos de mercado. Somos a plataforma digital de cambio mais bem avaliadas
             segundo pesquisas. Confibialidade do mercado e compromisso com a praticidade e o que torna CashSul
