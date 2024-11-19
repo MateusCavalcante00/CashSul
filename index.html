@@ -12,24 +12,29 @@
 </head>
 
 <body>
-
     <div class="header1">
-        <span style="cursor: pointer;">
-            <i class="fas fa-chart-line"></i> Cotações
-        </span>
-        <span style="cursor: pointer;">
-            <i class="fas fa-circle-question"></i> Ajuda
-        </span>
-        <span style="cursor:pointer;">
-            <i class="fas fa-wallet"></i> Carteira CashSul
-        </span>
-        <span style="cursor: pointer;">
-            <i class="fas fa-right-to-bracket"></i> Entrar
-        </span>
-        <span style="cursor: pointer;">
-            Criar conta
-        </span>
+        <strong>
+            <h1 class="txtLogo" style="cursor: pointer;">CashSul</h1>
+        </strong>
+        <strong>
+            <span style="cursor: pointer;">
+                <i class="fas fa-chart-line"></i> Cotações
+            </span>
+            <span style="cursor: pointer;">
+                <i class="fas fa-circle-question"></i> Ajuda
+            </span>
+            <span style="cursor: pointer;">
+                <i class="fas fa-wallet"></i> Carteira CashSul
+            </span>
+            <span style="cursor: pointer;">
+                <i class="fas fa-right-to-bracket"></i> Entrar
+            </span>
+            <span style="cursor: pointer;">
+                Criar conta
+            </span>
+        </strong>
     </div>
+
     <section class="conversao">
 
         <br><input type="number" name="valor" id="valor" placeholder="$ 0,00"></br>
@@ -46,11 +51,13 @@
             <option value="VES">Bolivar Venezuelano (VES)</option>
             <option value="USD">Dólar Americano (USD)</option>
             <option value="PYG">Guaraní (PYG)</option>
+
         </select>
 
         <strong class="txt">Para</strong>
 
         <select name="para" id="select2">
+
             <option value="ARS">Peso Argentino (ARS)</option>
             <option value="BRL">Real (BRL)</option>
             <option value="BOB">Boliviano (BOB)</option>
@@ -61,9 +68,10 @@
             <option value="VES">Bolivar Venezuelano (VES)</option>
             <option value="USD">Dólar Americano (USD)</option>
             <option value="PYG">Guaraní (PYG)</option>
+
         </select>
 
-        <input type="button" value="Concluir" onclick="valores()">
+        <strong><input class="botao" type="button" value="Concluir" onclick="valores()"></strong>
 
         <div id="valores">
             <br>Tarifa fixa: 1%</br>
@@ -75,15 +83,15 @@
     <div class="mensagem">
         <h1 class="titulo" style="font-size: 100px;">Suas viagens facilitadas!</h1>
         <p style="font-size: 16px;">
-            Com o seu <strong class="sulcard" style="cursor: pointer; ">Sulcard</strong> você garante
-            15% de desconto em
+            Com o seu <strong class="sulcard" style="cursor: pointer; ">Sulcard</strong> você consegue
+            enviar seu dinheiro para o exterior com 10% de desconto em
             tarifas.
         </p>
     </div>
 
     <script src="main.js"></script>
     <strong>
-        <footer style="text-align: center;">&copy;CashSul finances</footer>
+        <footer style="text-align: center;color: white;">&copy;CashSul finances</footer>
 </body>
 
 </html>

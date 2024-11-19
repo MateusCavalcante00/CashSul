@@ -7,8 +7,10 @@ function valores(){
  let select2 = document.getElementById('select2');
  let divValores = document.getElementById('valores');
  
- if(valor.value === ""){
-    alert('sem valor')
+ if(valor.value === "" || select1.value === select2.value){
+    alert('Conversão invalida!');
+    valor.value = "";
+    valor.focus();
     return; 
  }
 
@@ -16,14 +18,14 @@ function valores(){
  let dinheiro = Number(valor.value);
 
  const moedasEmdolar = [
-    {BRL:5.79},
-    {ARS:998.0},
+    {BRL:5.76},
+    {ARS:1001},
     {COP:4.421},
     {BOB:6.85},
-    {CLP:168.97},
-    {PYG:1.342},
-    {VES: 45.5},
-    {PEN:3.80} 
+    {CLP:971.65},
+    {PYG:7.844},
+    {VES: 45.67},
+    {PEN:3.79} 
  ]
 
  const simbolos = {
@@ -44,32 +46,37 @@ function valores(){
  const chave2 = moedasEmdolar.find(item => item[para] !== undefined);
 
  if(converter !== 'USD' && chave2 !== undefined){
+     tarifa = dinheiro * 1.5 / 100;
 
-     valorEmdolar = dinheiro / chave1[converter];
+     valorEmdolar = (dinheiro - tarifa) / chave1[converter]
 
      valorConvertido = valorEmdolar * chave2[para];
 
-     tarifa = dinheiro * 0.1 / 100;
+
+     tarifa = dinheiro * 1.0 / 100;
 
      divValores.innerHTML = `<br style="display: table;">${valorConvertido.toLocaleString(`${simbolos[para]}`, {style: 'currency', currency: `${para}`})}</br>
                              <br>Tarifa: ${tarifa.toLocaleString(`${simbolos[converter]}`,{style: 'currency', currency: `${converter}`})}</br>`
 
  }else if(converter === 'USD'){
-   
-     valorConvertido =  dinheiro * chave2[para];
+     tarifa = dinheiro * 1.0 / 100;
 
-     tarifa = dinheiro * 0.1 / 100;
+     valorConvertido =  (dinheiro - tarifa) * chave2[para];
+
 
      divValores.innerHTML = `<br style="display: table;">${valorConvertido.toLocaleString(`${simbolos[para]}`, {style: 'currency', currency: `${para}`})}</br>
                              <br>Tarifa: ${tarifa.toLocaleString(`us-EN`,{style: 'currency', currency: `USD`})}</br>`
  }else if(!chave2){
+     tarifa = dinheiro * 1.0 / 100;
 
-     valorConvertido = dinheiro / chave1[converter];
+     valorConvertido = (dinheiro - tarifa) / chave1[converter];
 
-     tarifa = dinheiro * 0.1 / 100;
 
      divValores.innerHTML = `<br style="display: table;">${valorConvertido.toLocaleString(`us-EN`, {style: 'currency', currency: `USD`})}</br>
                              <br>Tarifa: ${tarifa.toLocaleString(`${simbolos[converter]}`,{style: 'currency', currency: `${converter}`})}</br>`
  };
+
+ valor.value = "";
+ valor.focus();
 
 };

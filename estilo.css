@@ -1,13 +1,15 @@
 /**/
 body {
-    background-color: #F8F8F8
+    background-color: #0052CC;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
 }
+
 
 /**/
 .header1 {
-    background-color: rgb(14, 14, 80);
+    background-color: #efefc8;
     padding: 21px;
-    text-align: right;
     color: white;
     font-size: 15.8px;
     font-family: 'Raleway', sans-serif;
@@ -16,56 +18,75 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    height: -15px;
+    height: 60px;
+    /* Ajuste o valor da altura conforme necessário */
     caret-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header1 .txtLogo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0052CC;
+    margin-right: auto;
+    background-color: #efefc8;
+    font-family: 'Lato', sans-serif;
 }
 
 .header1 span {
-    margin-right: 50px;
-    background-color: rgb(14, 14, 80);
+    margin-right: 40px;
+    background-color: #0052CC;
     color: white;
     padding: 9px;
     border-radius: 20px;
-    transition: background-color 0.4s, color 0.4s;
+    transition: background-color 0.4s, color 0.4s, box-shadow 0.3s ease, transform 0.3s ease;
+    display: inline-block;
 }
 
 .header1 span:hover {
-    background-color: #FFFFFF;
+    background-color: #FFA366;
     color: rgb(14, 14, 80);
+    transform: scale(1.1);
+}
+
+.header1 span strong {
+    font-weight: bold;
 }
 
 /**/
 .conversao {
-    background-color: rgba(255, 255, 255, 0.762);
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    background-color: #efefc8;
+    color: #120c69;
     height: 103vh;
     width: 570px;
     text-align: center;
     margin: 0 auto;
     margin-right: 4%;
     border-radius: 10%;
-    box-shadow: 0px 4px 6px rgb(78, 61, 61);
-    margin-top: 8%;
+    margin-top: 8.5%;
     caret-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: NONE;
 }
 
 /**/
 .mensagem {
-    background-color: rgba(250, 248, 248, 0.815);
+    background-color: #0052CC;
     font-family: 'Montserrat', sans-serif;
     width: 600px;
     height: 120vh;
     text-align: justify;
-    color: rgb(21, 21, 116);
+    color: #F5F5DC;
     font-size: 15px;
     margin-top: -50.6%;
     margin-left: 2%;
     gap: 20px;
     caret-color: transparent;
+    font-weight: 700;
 }
 
 .mensagem .titulo {
@@ -74,61 +95,71 @@ body {
 
 /**/
 input[type='number'] {
+    color: #F8F8F8;
     width: 400px;
     padding: 20px;
     margin-bottom: 15px;
     border-radius: 20px;
     border: none;
-    background-color: rgb(201, 199, 198);
+    background-color: #0052CC;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     caret-color: auto;
     transition: none;
 }
 
-input[type='button'] {
-    background-color: rgb(201, 199, 198);
-    margin-bottom: 15px;
+input::placeholder {
+    color: #AAB4C8;
+    font-style: normal;
+}
+
+.botao {
+    background-color: #0052CC;
+    margin-bottom: 19px;
     width: 100px;
+    color: #F5F5DC;
     padding: 10px;
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    color: rgb(51, 45, 45);
-    transition: background-color 0.3s, color 0.3s;
+    font-size: 15px;
+    transition: background-color 0.4s, color 0.4s, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-input[type='button']:hover {
-    background-color: #2f2b68;
-    color: white;
+.botao:hover {
+    Background-color: #FFA366;
+    color: rgb(14, 14, 80);
+    transform: scale(1.1);
 }
 
 /**/
 select {
     width: 400px;
+    color: #F8F8F8;
     padding: 20px;
     gap: 20px;
     margin-bottom: 15px;
     border-radius: 30px;
     border: none;
-    background-color: rgb(201, 199, 198);
+    background-color: #0052CC;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.4s, color 0.4s, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 select:hover {
-    background-color: #2f2b68;
-    color: white;
+    Background-color: #FFA366;
+    color: rgb(14, 14, 80);
+    transform: scale(1.1);
 }
 
 /**/
 #valores {
     width: 400px;
     height: 40%;
-    background-color: rgb(201, 199, 198);
-    color: black;
+    background-color: #0052CC;
+    color: #F8F8F8;
     margin-bottom: 20px;
     border-radius: 20px;
     border: none;
@@ -141,7 +172,7 @@ select:hover {
 .txt {
     font-weight: bold;
     font-size: 18px;
-    color: rgb(111, 109, 108);
+    color: #0052CC;
     text-align: left;
     margin-bottom: 15px;
     font-family: 'Raleway', sans-serif;
@@ -150,14 +181,22 @@ select:hover {
 /**/
 .sulcard {
     background-color: #F8F8F8;
-    color: rgb(21, 21, 116);
+    color: #0052CC;
     transition: background-color 0.3s, border 0.3s;
+    border-radius: 20px;
+    padding: 1.3px;
+    transition: background-color 0.4s, color 0.4s, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .sulcard:hover {
-    background-color: rgb(21, 21, 116);
-    color: #F8F8F8;
-    padding: 9px;
+    Background-color: #FFA366;
+    color: rgb(14, 14, 80);
+    padding: 3px;
     border-radius: 15px;
-    font-size: 20px;
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 100;
 }
