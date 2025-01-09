@@ -46,10 +46,15 @@ body {
     cursor: pointer;
     padding: 9px;
     border-radius: 20px;
-    transition: background-color 0.4s, color 0.4s, box-shadow 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.2s, color 0.4s, box-shadow 0.3s ease, transform 0.2s ease;
     font-size: 15.5px;
     font-family: 'Roboto' , sans-serif;
     display: inline-block;
+}
+
+ a{
+    text-decoration: none;
+    color:  #354632;
 }
 
 .header1 span:hover {
@@ -68,7 +73,7 @@ body {
     color: #120c69;
     height: 100vh;
     width: 450px;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     margin-right: 4%;
     border-radius: 15px;
@@ -107,14 +112,13 @@ body {
 
 /**/
 input[type='number'] {
-    color: #F8F8F8;
+    color: #09363a;
     width: 400px;
     padding: 9px;
     margin-bottom: 15px;
     border-radius: 20px;
     border: none;
-    box-shadow: 1px 1px 0.7px #273325;
-    background-color: #25b161;
+    background-color: #e1e2f0;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     caret-color: auto;
@@ -127,11 +131,10 @@ input::placeholder {
 }
 
 .botao {
-    background-color: #25b161;
+    background-color: #e1e2f0;
     margin-bottom: 19px;
     width: 100px;
-    color:#273325;
-    box-shadow: 0.5px 0.5px 0.7px #273325;
+    color: #09363a;
     padding: 10px;
     border-radius: 20px;
     border: none;
@@ -149,22 +152,21 @@ input::placeholder {
 /**/
 select {
     width: 400px;
-    color:#273325;
-    box-shadow: 0.5px 0.5px 0.7px #273325;
+    color: #09363a;
     padding: 5px;
     gap: 20px;
     margin-bottom: 15px;
     border-radius: 30px;
     border: none;
-    background-color: #25b161;
+    background-color: #e1e2f0;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    transition: background-color 0.4s, color 0.4s, box-shadow 0.2s ease, transform 0.3s ease;
+    transition: background-color 0.2s, color 0.4s,  transform 0.2s ease;
 }
 
 select:hover {
-    Background-color: #e1e2f0;
+    background-color: #e1e2f0;
     color: #09363a;
     transform: scale(1.1);
 }
@@ -173,8 +175,8 @@ select:hover {
 #valores {
     width: 398px;
     height: 30%;
-    background-color: #25b161;
-    color:#273325;
+    background-color: #e1e2f0;
+    color: #09363a;
     margin-bottom: 20px;
     border-radius: 20px;
     border: none;
@@ -182,7 +184,6 @@ select:hover {
     display: table;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
-    box-shadow: 0.5px 0.5px 0.7px #273325;
 }
 
 /**/
@@ -192,7 +193,7 @@ select:hover {
     color: #0D5C63;
     text-align: left;
     margin-bottom: 15px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
