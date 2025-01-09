@@ -1,6 +1,6 @@
 /**/
 body {
-    background-color: #0052CC;
+    background-color: #2dd476;
     font-family: 'Lato', sans-serif;
     height: 100vh;
 }
@@ -8,8 +8,8 @@ body {
 
 /**/
 .header1 {
-    background-color: #efefc8;
-    padding: 21px;
+    background-color:white;
+    padding: 10px;
     color: white;
     font-size: 15.8px;
     font-family: 'Raleway', sans-serif;
@@ -19,6 +19,7 @@ body {
     width: 100%;
     z-index: 1000;
     height: 60px;
+    box-shadow: 2px 2px 5px #4F916B;
     /* Ajuste o valor da altura conforme necessário */
     caret-color: transparent;
     display: flex;
@@ -29,25 +30,31 @@ body {
 .header1 .txtLogo {
     font-size: 32px;
     font-weight: 700;
-    color: #0052CC;
+    color: #4F916B;
     margin-right: auto;
     background-color: #efefc8;
     font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 3px #4F916B;
 }
+
+
 
 .header1 span {
     margin-right: 40px;
-    background-color: #0052CC;
-    color: white;
+    background-color: #2dd476;
+    color: #354632;
+    cursor: pointer;
     padding: 9px;
     border-radius: 20px;
     transition: background-color 0.4s, color 0.4s, box-shadow 0.3s ease, transform 0.3s ease;
+    font-size: 15.5px;
+    font-family: 'Roboto' , sans-serif;
     display: inline-block;
 }
 
 .header1 span:hover {
-    background-color: #FFA366;
-    color: rgb(14, 14, 80);
+    background-color: #e1e2f0;
+    color:  #0D5C63;
     transform: scale(1.1);
 }
 
@@ -57,30 +64,32 @@ body {
 
 /**/
 .conversao {
-    background-color: #efefc8;
+    background-color:white;
     color: #120c69;
-    height: 103vh;
-    width: 570px;
+    height: 100vh;
+    width: 450px;
     text-align: center;
     margin: 0 auto;
     margin-right: 4%;
-    border-radius: 10%;
+    border-radius: 15px;
+    box-shadow: 5px 4px 5px #4F916B;
     margin-top: 8.5%;
     caret-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: NONE;
+    border: none;
 }
 
 /**/
 .mensagem {
-    background-color: #0052CC;
+    background-color: #2dd476;;
     font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px #4D6648;;
     width: 600px;
     height: 120vh;
     text-align: justify;
-    color: #F5F5DC;
+    color:#42573f;
     font-size: 15px;
     margin-top: -50.6%;
     margin-left: 2%;
@@ -88,6 +97,9 @@ body {
     caret-color: transparent;
     font-weight: 700;
 }
+ .mensagem p{
+    text-shadow: none;
+ }
 
 .mensagem .titulo {
     text-align: justify;
@@ -97,11 +109,12 @@ body {
 input[type='number'] {
     color: #F8F8F8;
     width: 400px;
-    padding: 20px;
+    padding: 9px;
     margin-bottom: 15px;
     border-radius: 20px;
     border: none;
-    background-color: #0052CC;
+    box-shadow: 1px 1px 0.7px #273325;
+    background-color: #25b161;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     caret-color: auto;
@@ -109,15 +122,16 @@ input[type='number'] {
 }
 
 input::placeholder {
-    color: #AAB4C8;
+    color: #273325;
     font-style: normal;
 }
 
 .botao {
-    background-color: #0052CC;
+    background-color: #25b161;
     margin-bottom: 19px;
     width: 100px;
-    color: #F5F5DC;
+    color:#273325;
+    box-shadow: 0.5px 0.5px 0.7px #273325;
     padding: 10px;
     border-radius: 20px;
     border: none;
@@ -127,74 +141,78 @@ input::placeholder {
 }
 
 .botao:hover {
-    Background-color: #FFA366;
-    color: rgb(14, 14, 80);
+    Background-color: #e1e2f0;
+    color: #09363a;
     transform: scale(1.1);
 }
 
 /**/
 select {
     width: 400px;
-    color: #F8F8F8;
-    padding: 20px;
+    color:#273325;
+    box-shadow: 0.5px 0.5px 0.7px #273325;
+    padding: 5px;
     gap: 20px;
     margin-bottom: 15px;
     border-radius: 30px;
     border: none;
-    background-color: #0052CC;
-    font-size: 18px;
+    background-color: #25b161;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    transition: background-color 0.4s, color 0.4s, box-shadow 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.4s, color 0.4s, box-shadow 0.2s ease, transform 0.3s ease;
 }
 
 select:hover {
-    Background-color: #FFA366;
-    color: rgb(14, 14, 80);
+    Background-color: #e1e2f0;
+    color: #09363a;
     transform: scale(1.1);
 }
 
 /**/
 #valores {
-    width: 400px;
-    height: 40%;
-    background-color: #0052CC;
-    color: #F8F8F8;
+    width: 398px;
+    height: 30%;
+    background-color: #25b161;
+    color:#273325;
     margin-bottom: 20px;
     border-radius: 20px;
     border: none;
+    text-align: center;
     display: table;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
+    box-shadow: 0.5px 0.5px 0.7px #273325;
 }
 
 /**/
 .txt {
     font-weight: bold;
     font-size: 18px;
-    color: #0052CC;
+    color: #0D5C63;
     text-align: left;
     margin-bottom: 15px;
     font-family: 'Raleway', sans-serif;
 }
 
+
 /**/
 .sulcard {
-    background-color: #F8F8F8;
-    color: #0052CC;
+    background-color:#455a41;
+    color:#30E67E;
     transition: background-color 0.3s, border 0.3s;
-    border-radius: 20px;
-    padding: 1.3px;
+    border-radius: 6px;
+    padding: 0.8px;
     transition: background-color 0.4s, color 0.4s, box-shadow 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .sulcard:hover {
-    Background-color: #FFA366;
-    color: rgb(14, 14, 80);
-    padding: 3px;
-    border-radius: 15px;
-    transform: scale(1.1);
+    Background-color: #E69260;
+    color: #394b36;
+    padding: 1px;
+    border-radius: 7px;
+    transform: scale(1.2);
 }
 
 footer {
